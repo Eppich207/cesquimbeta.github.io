@@ -55,7 +55,7 @@
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1552765147494-1 hamburger-menu prevent-auto-z-index hide-on-desktop" title=""><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1673197737616_381 closed">
+<div class="hamburger-menu_1673270078332_392 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -86,13 +86,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.remove('open');
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.add('closed');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.remove('open');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.add('open');
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.add('open');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -102,7 +102,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1673197737616_381').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1673270078332_392').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -110,17 +110,17 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1673197737616_381 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1673270078332_392 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1673197737616_381 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1673270078332_392 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
   setTimeout(() => scrollOrResize(), 0)
 })();
 </script>
-</div></div><a class="editable-style image-element silex-id-1673184420875-3" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style html-element silex-id-1673197454842-16"><div class="silex-element-content"><div class="navbar">
+</div></div><a class="editable-style image-element silex-id-1673184420875-3" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style html-element silex-id-1673197454842-16 hide-on-mobile"><div class="silex-element-content"><div class="navbar">
   <a href="/">Inicio</a>
   <a href="/comites&quot;">Comités</a>
   <a href="/inscripcion">Inscripción</a>
@@ -159,8 +159,62 @@
   </div>
 
 </div></div></div></div>
-    ﻿﻿</header><section class="editable-style section-element silex-id-1673201560647-7 page-comites paged-element page-inscripcion page-participacion page-xviii page-ganador paged-element-visible"><div class="editable-style container-element silex-id-1673201560647-8 silex-element-content website-width prevent-draggable"></div></section><section class="container-element editable-style section-element silex-id-1545056615878-13 prevent-resizable page-hotels page-participaci-n page-participacion paged-element paged-element-visible"><div class="editable-style container-element silex-element-content website-width silex-id-1545056615879-14"><div class="editable-style text-element text-style-2 silex-id-1545056615879-15"><div class="silex-element-content normal"> <h1>Tipos de participación</h1><h2></h2><h2>Comunicaciones orales, tipo póster y vídeos de divulgación</h2></div>﻿﻿</div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><div class="editable-style silex-id-1537730084852-104 html-element silex-component silex-component-share"><div class="silex-element-content">
-<ul class="share-buttons" id="id_1673197737622_110">
+    ﻿﻿</header><section class="editable-style section-element silex-id-1673201560647-7 page-comites paged-element page-inscripcion page-participacion page-xviii page-ganador paged-element-visible"><div class="editable-style container-element silex-id-1673201560647-8 silex-element-content website-width prevent-draggable"></div></section><section class="container-element editable-style section-element silex-id-1545056615878-13 prevent-resizable page-hotels page-participaci-n page-participacion paged-element paged-element-visible"><div class="editable-style container-element silex-element-content website-width silex-id-1545056615879-14"><div class="editable-style text-element text-style-2 silex-id-1545056615879-15"><div class="silex-element-content normal"> <h1>Tipos de participación</h1><h2></h2><h2>Comunicaciones orales, tipo póster y vídeos de divulgación</h2></div>﻿﻿</div><div class="editable-style image-element silex-id-1673270774606-0"><img src="assets/unnamed%20comunicaci%C3%B3n.png"></div><div class="editable-style text-element silex-id-1673270794765-1"><div class="silex-element-content normal"><p><u><b>Comunicaciones orales:</b></u>10 minutos de duración<br><br><u><b>Comunicaciones tipo póster:</b></u>&nbsp;120 cm (largo) x 90 cm (ancho)<br><br><u><b>Vídeo de divulgación:</b></u>&nbsp;Máx 5 min de duración
+
+</p></div></div><div class="editable-style container-element silex-id-1673270989330-3"><div class="editable-style image-element silex-id-1673271017783-4"><img src="assets/unnamed%20avi%C3%B3n.png"></div><div class="editable-style text-element silex-id-1673270908054-2 style-central"><div class="silex-element-content normal"><p>
+
+</p><h2>Inscripción y envío de resumen<br></h2><p>Plazo de inscripción hasta el <b>7 de abril</b> de 2023</p><p><b><br></b></p><p><b>Formato y envío del resumen</b><br></p>
+
+</div></div><div class="editable-style html-element silex-id-1673271093350-5"><div class="silex-element-content"><div>
+
+<button class="button-round" onclick=" window.open('http://cesquim.webs.ull.es/index_htm_files/Instrucciones_Plantilla_resumen_XVII_CESQuim.pdf','_blank')">Descargar instrucciones
+    
+
+    </button>
+
+
+</div></div></div><div class="editable-style html-element silex-id-1673271733870-7"><div class="silex-element-content"><div>
+
+<button class="button-round" onclick=" window.open('http://cesquim.webs.ull.es/index_htm_files/Plantilla_resumen_XVIII_CESQuim.doc','_blank')">Descargar Plantilla
+    
+
+    </button>
+
+
+</div></div></div><div class="editable-style html-element silex-id-1673271738392-9"><div class="silex-element-content"><div>
+
+<button class="button-round" onclick=" window.open('javascript:;','_blank')">Envio de resúmenes
+    
+
+    </button>
+
+
+</div></div></div><div class="editable-style text-element silex-id-1673272018142-11 style-central"><div class="silex-element-content normal"><p>
+
+</p><p><b>Fecha límite de entrega de vídeos de divulgación</b>:<br>11 de abril</p><p><b>Fecha límite de entrega presentación de comunicaciones orales</b>:<br>11 de abril</p>
+
+<p></p></div></div><div class="editable-style html-element silex-id-1673272076066-12"><div class="silex-element-content"><div>
+
+<button class="button-round" onclick=" window.open('javascript:;','_blank')">Envío de presentaciones y vídeos
+    
+
+    </button>
+
+
+</div></div></div></div><div class="editable-style container-element silex-id-1673272195103-14"><div class="editable-style container-element silex-id-1673272208022-15"><div class="editable-style text-element silex-id-1673272228456-16 text-style-2"><div class="silex-element-content normal"> <h2>¿Qué se puede presentar?</h2></div></div></div><div class="editable-style text-element silex-id-1673272293375-17"><div class="silex-element-content normal"><p>
+
+</p><p>- Trabajos de investigación<br><br>- Temas de divulgación científica<br><br>- Revisiones bibliográficas<br><br>- Desarrollo de prácticas</p>
+
+<p></p></div></div><div class="editable-style image-element silex-id-1673272571100-18"><img src="assets/Untitled.png"></div><div class="editable-style text-element silex-id-1673272600438-19 style-central"><div class="silex-element-content normal"><p>
+
+</p><p>Relacionados con la <b>Química </b>y las <b>Ciencias Ambientales</b>, así como con <b>áreas afines</b> (Física, Biología, Matemáticas, Farmacia e Ingeniería)</p><br>
+
+<p></p></div></div><div class="editable-style text-element silex-id-1673272680288-20 style-central"><div class="silex-element-content normal"><p>
+
+Todos los trabajos presentados, sobre todo aquellos de alumnos de máster y doctorado, deben adaptarse al nivel de los alumnos de grado, procurando que sean fácilmente entendibles por los asistentes. Y recuerda, este congreso no es exclusivo de la Universidad de La Laguna. <b>¡Los estudiantes y jóvenes investigadores de otras universidades pueden participar!</b>
+
+</p></div></div></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><div class="editable-style silex-id-1537730084852-104 html-element silex-component silex-component-share"><div class="silex-element-content">
+<ul class="share-buttons" id="id_1673270078335_466">
   
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me&amp;t=Silex%2520website%2520builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="assets/Facebook.png"></a></li>
   
@@ -199,4 +253,4 @@ Avda. Astrofísico Francisco Sánchez, s/n<br>Edificio de Química, Facultad de 
 
 </h3><h3>Contacto</h3><p><a href="mailto:cesquim@ull.edu.es" rel="" target="" type="" title="" download="">cesquim@ull.edu.es</a></p><p><br></p></div></div><div class="editable-style text-element silex-id-1537541949036-0 footer">
                 <div class="silex-element-content normal"><h3>Redes sociales<br></h3><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
-            </div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div></div></section></body></html>
+            </div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div></div></section></body></html>
