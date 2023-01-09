@@ -55,7 +55,7 @@
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1552765147494-1 hamburger-menu prevent-auto-z-index hide-on-desktop" title=""><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1673197737616_381 closed">
+<div class="hamburger-menu_1673270078332_392 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -86,13 +86,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.remove('open');
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.add('closed');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.remove('open');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.add('open');
-    document.querySelector('.hamburger-menu_1673197737616_381').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.add('open');
+    document.querySelector('.hamburger-menu_1673270078332_392').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -102,7 +102,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1673197737616_381').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1673270078332_392').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -110,17 +110,17 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1673197737616_381 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1673270078332_392 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1673197737616_381 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1673270078332_392 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
   setTimeout(() => scrollOrResize(), 0)
 })();
 </script>
-</div></div><a class="editable-style image-element silex-id-1673184420875-3" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style html-element silex-id-1673197454842-16"><div class="silex-element-content"><div class="navbar">
+</div></div><a class="editable-style image-element silex-id-1673184420875-3" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style html-element silex-id-1673197454842-16 hide-on-mobile"><div class="silex-element-content"><div class="navbar">
   <a href="/">Inicio</a>
   <a href="/comites&quot;">Comités</a>
   <a href="/inscripcion">Inscripción</a>
@@ -192,7 +192,7 @@ Y recuerda, este congreso no es exclusivo de la Universidad de La Laguna.<b> ¡L
 
 
 </div></div></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><div class="editable-style silex-id-1537730084852-104 html-element silex-component silex-component-share"><div class="silex-element-content">
-<ul class="share-buttons" id="id_1673197737622_110">
+<ul class="share-buttons" id="id_1673270078335_466">
   
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me&amp;t=Silex%2520website%2520builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="assets/Facebook.png"></a></li>
   
@@ -231,4 +231,4 @@ Avda. Astrofísico Francisco Sánchez, s/n<br>Edificio de Química, Facultad de 
 
 </h3><h3>Contacto</h3><p><a href="mailto:cesquim@ull.edu.es" rel="" target="" type="" title="" download="">cesquim@ull.edu.es</a></p><p><br></p></div></div><div class="editable-style text-element silex-id-1537541949036-0 footer">
                 <div class="silex-element-content normal"><h3>Redes sociales<br></h3><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
-            </div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div></div></section></body></html>
+            </div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div></div></section></body></html>
