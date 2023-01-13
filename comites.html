@@ -18,9 +18,9 @@
     
 
     
-<meta name="twitter:title" content="Silex template"><meta name="og:title" content="Silex template"><meta name="twitter:description" content="your description here"><meta name="og:description" content="your description here"><meta name="twitter:card" content="summary"><link href="https://fontlibrary.org/face/glacial-indifference" rel="stylesheet" class="silex-custom-font"><link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet" class="silex-custom-font"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"> <!-- Maarten Wolf Epppppic--><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+<meta name="twitter:title" content="Silex template"><meta name="og:title" content="Silex template"><meta name="twitter:description" content="your description here"><meta name="og:description" content="your description here"><meta name="twitter:card" content="summary"><link href="https://fontlibrary.org/face/glacial-indifference" rel="stylesheet" class="silex-custom-font"><link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"> <!-- Maarten Wolf Epppppic--><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
-<body class="body-initial all-style prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-new-gr-c-s-loaded="14.1093.0" data-current-page="page-comites">
+<body class="body-initial all-style prevent-resizable prevent-selectable editable-style enable-mobile silex-runtime silex-published" data-new-gr-c-s-loaded="14.1093.0" data-current-page="page-comites">
     
 
 
@@ -53,7 +53,7 @@
 
 
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><header class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
-        <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><a class="editable-style image-element silex-id-1673184420875-3" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style html-element silex-id-1673197454842-16 hide-on-mobile"><div class="silex-element-content"><div class="navbar">
+        <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style html-element silex-id-1673197454842-16 hide-on-mobile"><div class="silex-element-content"><div class="navbar">
   <a href="/cesquimbeta.github.io/">Inicio</a>
   <a href="/cesquimbeta.github.io/comites">Comités</a>
   <a href="/cesquimbeta.github.io/inscripcion">Inscripción</a>
@@ -91,7 +91,72 @@
     </div>
   </div>
 
-</div></div></div></div>
+</div></div></div><a class="editable-style image-element silex-id-1673184420875-3 hide-on-mobile" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style image-element silex-id-1673625890153-1 hide-on-desktop"><img src="assets/icono-ull-blanco.png"></div><div class="editable-style text-element silex-id-1673625954789-2 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1673626259920_199 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="comites.html" title="Comités" class="page-link-active">comités</a></li>
+            
+                <li><a href="inscripcion.html" title="Inscripción">inscribirse</a></li>
+            
+                <li><a href="participacion.html" title="Participación">participar</a></li>
+            
+                <li><a href="./" title="Inicio">Inicio</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1673626259920_199').classList.remove('open');
+    document.querySelector('.hamburger-menu_1673626259920_199').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1673626259920_199').classList.add('open');
+    document.querySelector('.hamburger-menu_1673626259920_199').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1673626259920_199').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1673626259920_199 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1673626259920_199 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div></div>
     ﻿﻿</header><section class="editable-style section-element silex-id-1673201560647-7 page-ganador page-comites paged-element page-inscripcion page-participacion page-xviii paged-element-visible"><div class="editable-style container-element silex-id-1673201560647-8 silex-element-content website-width prevent-draggable"></div></section><section class="container-element editable-style silex-id-1545056569614-8 section-element prevent-resizable page-vacations page-comites paged-element paged-element-visible"><div class="editable-style silex-id-1545056569608-7 container-element silex-element-content website-width"><div class="editable-style container-element silex-id-1673278089861-32 zindex1"><div class="editable-style text-element silex-id-1673200734497-0 style-comites zindex1" title=""><div class="silex-element-content normal"> <h1>Comité Asesor</h1><h2>
 
 Comisión de Divulgación de la Sección de Química<br>
@@ -118,12 +183,10 @@ Científico
 
 Profesores e investigadores<br>
 
-</h2><p>Pr'oximamente<br>
-
-<br></p><p><br></p> <h2>
+</h2><p>Verónica Pino Estévez&nbsp;<br>Cintia Hernández Sánchez&nbsp;<br>Juan Israel García Cruz&nbsp;<br>Victor Sotero Martín García&nbsp;<br>Candela Díaz García&nbsp;<br>Jacob Lorenzo Morales&nbsp;<br>Luís Miguel Rivera Gavídia</p><p><br></p> <h2>
 
 </h2></div></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><div class="editable-style silex-id-1537730084852-104 html-element silex-component silex-component-share"><div class="silex-element-content">
-<ul class="share-buttons" id="id_1673278922394_374">
+<ul class="share-buttons" id="id_1673625472555_390">
   
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me&amp;t=Silex%2520website%2520builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="assets/Facebook.png"></a></li>
   
@@ -160,4 +223,4 @@ Avda. Astrofísico Francisco Sánchez, s/n<br>Edificio de Química, Facultad de 
 
 </h3><h3>Contacto</h3><p><a href="mailto:cesquim@ull.edu.es"><b>cesquim@ull.edu.es</b></a></p><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1537541949036-0 footer">
                 <div class="silex-element-content normal"><h3>Redes sociales<br></h3><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
-            </div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div></div></section></body></html>
+            </div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div><div class="editable-style image-element silex-id-1673186886571-14"><img src="assets/twitter%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186861161-13"><img src="assets/ig%20logo%20blue%20background.png"></div></div></section></body></html>
