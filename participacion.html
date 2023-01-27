@@ -91,9 +91,9 @@
     </div>
   </div>
 
-</div></div></div><a class="editable-style image-element silex-id-1673184420875-3 hide-on-mobile" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style image-element silex-id-1673625890153-1 hide-on-desktop"><img src="assets/icono-ull-blanco.png"></div><div class="editable-style text-element silex-id-1673625954789-2 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
+</div></div></div><a class="editable-style image-element silex-id-1673184420875-3 hide-on-mobile" href="http://www.ull.es"><img src="assets/icono-ull-blanco.png"></a><div class="editable-style image-element silex-id-1673625890153-1 hide-on-desktop"><img src="assets/icono-ull-blanco.png"></div><div class="editable-style text-element silex-id-1673625954789-2 hide-on-desktop silex-component-hamburger prevent-resizable prevent-auto-z-index hamburger-menu"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1674496012308_8 closed">
+<div class="hamburger-menu_1674825812765_619 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -104,13 +104,13 @@
         <nav class="">
             <ul>
             
-                <li><a href="comites.html" title="Comités" class="">comités</a></li>
-            
-                <li><a href="inscripcion.html" title="Inscripción" class="">inscribirse</a></li>
-            
-                <li><a href="participacion.html" title="Participación" class="page-link-active">participar</a></li>
-            
                 <li><a href="./" title="Inicio">Inicio</a></li>
+            
+                <li><a href="inscripcion.html" title="Inscripción">Inscripción</a></li>
+            
+                <li><a href="participacion.html" title="Participación" class="page-link-active">Participación</a></li>
+            
+                <li><a href="comites.html" title="Comités" class="">Comités</a></li>
             
             </ul>
         </nav>
@@ -122,13 +122,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1674496012308_8').classList.remove('open');
-    document.querySelector('.hamburger-menu_1674496012308_8').classList.add('closed');
+    document.querySelector('.hamburger-menu_1674825812765_619').classList.remove('open');
+    document.querySelector('.hamburger-menu_1674825812765_619').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1674496012308_8').classList.add('open');
-    document.querySelector('.hamburger-menu_1674496012308_8').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1674825812765_619').classList.add('open');
+    document.querySelector('.hamburger-menu_1674825812765_619').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -138,7 +138,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1674496012308_8').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1674825812765_619').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -146,10 +146,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1674496012308_8 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1674825812765_619 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1674496012308_8 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1674825812765_619 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -171,11 +171,11 @@
 
 Todos los trabajos presentados, sobre todo aquellos de alumnos de máster y doctorado, deben adaptarse al nivel de los alumnos de grado, procurando que sean fácilmente entendibles por los asistentes. Y recuerda, este congreso no es exclusivo de la Universidad de La Laguna. <b>¡Los estudiantes y jóvenes investigadores de otras universidades pueden participar!</b>
 
-</p></div></div><div class="editable-style image-element silex-id-1673272571100-18 hide-on-mobile"><img src="assets/Untitled.png"></div></div><div class="editable-style container-element silex-id-1673270989330-3"><div class="editable-style text-element silex-id-1673270908054-2 style-central"><div class="silex-element-content normal"><p>
+</p></div></div><div class="editable-style image-element silex-id-1673272571100-18 hide-on-mobile"><img src="assets/Untitled.png"></div></div><div class="editable-style container-element silex-id-1673270989330-3"><div class="editable-style text-element silex-id-1673270908054-2 style-central hide-on-mobile"><div class="silex-element-content normal"><p>
 
 </p><h2>Inscripción y envío de resumen<br></h2><p>Plazo de inscripción hasta el <b>7 de abril</b> de 2023</p><p><b><br></b></p><p><b>Formato y instrucciones</b><br></p>
 
-</div></div><div class="editable-style html-element silex-id-1673271733870-7"><div class="silex-element-content"><div>
+</div></div><div class="editable-style image-element silex-id-1673271017783-4 hide-on-mobile"><img src="assets/unnamed%20avi%C3%B3n.png"></div><div class="editable-style html-element silex-id-1673271733870-7"><div class="silex-element-content"><div>
 
 <button class="button-round" onclick=" window.open('http://cesquim.webs.ull.es/index_htm_files/Plantilla_resumen_XVIII_CESQuim.doc','_blank')">Descargar plantilla
     
@@ -195,7 +195,7 @@ Todos los trabajos presentados, sobre todo aquellos de alumnos de máster y doct
 
 </p><p><b>Fecha límite de entrega de vídeos de divulgación</b>:<br>11 de abril</p><p><b>Fecha límite de entrega presentación de comunicaciones orales</b>:<br>11 de abril</p>
 
-<p></p></div></div><div class="editable-style text-element silex-id-1674496561518-0 style-central"><div class="silex-element-content normal"><p><b>Envío de resúmenes y vídeos</b></p></div></div><div class="editable-style html-element silex-id-1673272076066-12"><div class="silex-element-content"><div>
+<p></p></div></div><div class="editable-style text-element silex-id-1674496561518-0 style-central"><div class="silex-element-content normal"><p><b>Envío de resúmenes, presentaciones&nbsp; y vídeos</b></p></div></div><div class="editable-style html-element silex-id-1673272076066-12"><div class="silex-element-content"><div>
 
 <button class="button-round" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSc1_8F-hjmFLYGZBKX436o1PghewmBBgaZGlCRtdnXCkr5Mog/viewform?usp=sf_link','_blank')">Envío de presentaciones y vídeos
     
@@ -211,42 +211,4 @@ Todos los trabajos presentados, sobre todo aquellos de alumnos de máster y doct
     </button>
 
 
-</div></div></div><div class="editable-style image-element silex-id-1673271017783-4 hide-on-mobile"><img src="assets/unnamed%20avi%C3%B3n.png"></div></div></div></section><section class="container-element editable-style silex-id-1537726585006-18 section-element prevent-resizable"><div class="editable-style silex-id-1537726585003-17 container-element silex-element-content website-width"><div class="editable-style silex-id-1537730084852-104 html-element silex-component silex-component-share"><div class="silex-element-content">
-<ul class="share-buttons" id="id_1674496012303_439">
-  
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me&amp;t=Silex%2520website%2520builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="assets/Facebook.png"></a></li>
-  
-  
-  <li><a href="https://twitter.com/intent/tweet?source=https://www.silex.me&amp;text=Silex%2520website%2520builder:%20https://www.silex.me&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" src="assets/Twitter.png"></a></li>
-  
-  
-  
-  
-  <li><a href="http://pinterest.com/pin/create/button/?url=https://www.silex.me&amp;description=Here%2520is%2520a%2520silex%2520template" target="_blank" title="Pin it"><img alt="Pin it" src="assets/Pinterest.png"></a></li>
-  
-  
-  
-  <li><a href="http://www.reddit.com/submit?url=https://www.silex.me&amp;title=Silex%2520website%2520builder" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="assets/Reddit.png"></a></li>
-  
-  
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.silex.me&amp;title=Silex%2520website%2520builder&amp;summary=Here%2520is%2520a%2520silex%2520template&amp;source=https://www.silex.me" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="assets/LinkedIn.png"></a></li>
-  
-  
-  
-  
-  <li><a href="mailto:?subject=Silex%2520website%2520builder&amp;body=Here%2520is%2520a%2520silex%2520template:%20https://www.silex.me" target="_blank" title="Send email"><img alt="Send by email" src="assets/Email.png"></a></li>
-  
-</ul>
-
-
-</div></div><div class="editable-style text-element silex-id-1673186587860-7 footer" title=""><div class="silex-element-content normal"><h3>
-
-</h3><h3>¿Donde Estamos?</h3><p>
-
-Avda. Astrofísico Francisco Sánchez, s/n<br>Edificio de Química, Facultad de Ciencias<br>38206 San Cristóbal de La Laguna<br>Santa Cruz de Tenerife
-
-<br></p><p><br></p><p>Tienes problemas viendo la web?<br>Prueba acceder desde tu ordenador</p></div></div><div class="editable-style text-element silex-id-1673186652131-9 footer" title=""><div class="silex-element-content normal"><h3>
-
-</h3><h3>Contacto</h3><p><a href="mailto:cesquim@ull.edu.es"><b>cesquim@ull.edu.es</b></a></p><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div class="editable-style text-element silex-id-1537541949036-0 footer">
-                <div class="silex-element-content normal"><h3>Redes sociales<br></h3><p><br></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
-            </div><div class="editable-style html-element silex-id-1673187180932-16"><div class="silex-element-content"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.3244041800499%2C28.478200159875914%2C-16.31992489099503%2C28.480279593729428&amp;layer=mapnik&amp;marker=28.479239881920286%2C-16.32216453552246" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=28.47924&amp;mlon=-16.32216#map=19/28.47924/-16.32216">Mostrar en grande</a></small></div></div><div class="editable-style image-element silex-id-1673186886571-14 hide-on-mobile"><img src="assets/twitter%20logo%20blue%20background.png"></div><div class="editable-style image-element silex-id-1673186861161-13 hide-on-mobile"><img src="assets/ig%20logo%20blue%20background.png"></div></div></section></body></html>
+</div></div></div></div></div></section></body></html>
